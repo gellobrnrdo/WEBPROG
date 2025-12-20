@@ -1,0 +1,90 @@
+/* UNIVERSAL */
+* { 
+    box-sizing: border-box; 
+}
+
+/* BODY element selector */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("../images/horoscope-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* GROUP selector */
+header, footer {
+    background-color: rgba(0,0,0,0.6);
+    /* BOX MODEL VISUALIZATION */
+    border: 3px solid #ffd700;  
+    padding: 20px;               
+    margin-bottom: 20px;         
+}
+
+/* DESCENDANT selector */
+main p {
+    line-height: 1.6;
+}
+
+/* CLASS selector */
+.fortune {
+    margin-top: 15px;          
+    padding: 12px;             
+    border-radius: 8px;
+    background-color: #ffffff;
+    
+    /* BOX MODEL HIGHLIGHT */
+    border: 2px solid #ff8c00;  
+    outline: 1px dashed red;     
+}
+
+/* CHILD selector */
+#horoscope-result > img {
+    display: block;
+    margin: 15px auto;        
+}
+
+/* ADJACENT sibling selector */
+h2 + img {
+    margin-top: 10px;
+}
+
+/* GENERAL sibling selector */
+h2 ~ .fortune {
+    border-left: 4px solid #ff8c00;
+    padding-left: 10px;
+}
+
+/* ATTRIBUTE selector */
+select[id="zodiac-select"] {
+    background-color: #fff;
+    padding: 8px;              
+    border: 2px solid gold;    
+    margin: 10px 0;            
+}
+
+/* PSEUDO-CLASS selector */
+button:hover {
+    background-color: #cc7000;
+    transition: 0.3s;
+    border: 2px solid #ffa500; 
+
+/* PSEUDO-CLASS selector */
+.fortune:first-child {
+    font-weight: bold;
+}
+
+/* MAIN CONTAINER box model */
+main {
+    max-width: 850px;
+    margin: 70px auto;           
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 35px;               
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    border: 3px solid #ffa500;   
+}
+}

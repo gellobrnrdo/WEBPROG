@@ -1,0 +1,62 @@
+/* UNIVERSAL */
+* { box-sizing: border-box; }
+
+/* BODY element selector */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("../images/horoscope-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* GROUP selector */
+header, footer {
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* DESCENDANT selector */
+main p {
+    line-height: 1.6;
+}
+
+/* CLASS selector */
+.fortune {
+    margin-top: 15px;
+}
+
+/* CHILD selector */
+#horoscope-result > img {
+    display: block;
+    margin: 15px auto;
+}
+
+/* ADJACENT sibling selector */
+h2 + img {
+    margin-top: 10px;
+}
+
+/* GENERAL sibling selector */
+h2 ~ .fortune {
+    border-left: 4px solid #ff8c00;
+    padding-left: 10px;
+}
+
+/* ATTRIBUTE selector */
+select[id="zodiac-select"] {
+    background-color: #fff;
+}
+
+/* PSEUDO-CLASS selector */
+button:hover {
+    background-color: #cc7000;
+    transition: 0.3s;
+}
+
+/* PSEUDO-CLASS selector */
+.fortune:first-child {
+    font-weight: bold;
+}
