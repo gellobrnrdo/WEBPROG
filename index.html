@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gello Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="brand">Gello.exe: Running Portfolio...</div>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="schedule.html">Schedule</a>
+    </nav>
+</header>
+
+<main class="content-wrapper">
+    <!-- LEFT SECTION: ABOUT ME + BIG IMAGE -->
+    <section class="left-section">
+        <h2>About Me</h2>
+        <div class="hero-layout">
+            <div class="big-image">
+                <img src="assets/img1.jpg" alt="Gello">
+            </div>
+            <div class="hero-text">
+                <h1>Hello,<br>I am <span>Gello!</span></h1>
+                <p>
+                    I am currently a third year IT student at NU Fairview. SM Foundation Inc. 
+                    has been supporting me to study through their offered scholarship.
+                </p>
+                <p>
+                    I have represented the IT Department during the SET Week for two consecutive years. 
+                    But before taking this program, I was enrolled to BSCE for a couple of terms.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RIGHT SECTION: GALLERY -->
+    <section class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="assets/img2.jpg" alt="Gallery 1" onclick="openModal(this)">
+            <img src="assets/img3.jpg" alt="Gallery 2" onclick="openModal(this)">
+            <img src="assets/img4.jpg" alt="Gallery 3" onclick="openModal(this)">
+            <img src="assets/img5.jpg" alt="Gallery 4" onclick="openModal(this)">
+            <img src="assets/img6.jpg" alt="Gallery 5" onclick="openModal(this)">
+            <img src="assets/img7.jpg" alt="Gallery 6" onclick="openModal(this)">
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION (FULL WIDTH) -->
+    <section class="education-section">
+        <h2>Education</h2>
+        <div class="education-content">
+            <div class="edu-block">
+                <h3>Elementary:</h3>
+                <p>Caroline Learning Center<br><span class="year">2009-2012</span></p>
+                <p>Bagong Silang Elementary School<br><span class="year">2012-2015</span></p>
+                <p>San Diego Elementary School<br><span class="year">2015-2017 (With Honors)</span></p>
+            </div>
+            <div class="edu-block">
+                <h3>High School:</h3>
+                <p>Batasan Hills National High School<br><span class="year">2017 - 2023 (With Honors)</span></p>
+            </div>
+            <div class="edu-block">
+                <h3>College:</h3>
+                <p>NU Fairview<br><span class="year">2023-Present</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS AND INTERESTS SECTION (FULL WIDTH) -->
+    <section class="skills-interests-section">
+        <div class="skills-block">
+            <h2>Skills</h2>
+            <ul>
+                <li>UI/UX Design</li>
+                <li>Data Analytics</li>
+                <li>Database Management</li>
+                <li>Systems Analysis</li>
+            </ul>
+        </div>
+        <div class="interests-block">
+            <h2>Interests</h2>
+            <div class="interest-item">
+                <strong>Sports</strong>
+                <p>(Volleyball and Running)</p>
+            </div>
+            <div class="interest-item">
+                <strong>Music</strong>
+                <p>(Pop, Alternative, and Heavy Metal)</p>
+            </div>
+            <div class="interest-item">
+                <strong>Movies</strong>
+                <p>(SciFi, Horror, RomCom, and Drama)</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+<footer>
+    Email: bernardocj@students.nu-fairview.edu.ph |
+    Instagram: @frostedgello |
+    Mobile: 09099544100
+</footer>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
