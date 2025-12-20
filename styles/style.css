@@ -1,0 +1,193 @@
+/* Base body */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff5f5;
+    color: #4d0000;
+    padding: 0;
+    margin: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark mode */
+body.dark {
+    background: #4d0000;
+    color: #e6ffe6;
+}
+
+/* Container */
+header, main {
+    max-width: 700px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background: #fff0f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark header, body.dark main {
+    background: #330000;
+}
+
+/* Header */
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #cc0000;
+}
+
+/* Theme toggle container */
+.theme-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+/* Labels and inputs */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #cc0000;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    background: #fff0f0;
+    color: #4d0000;
+    transition: all 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #008000;
+    box-shadow: 0 0 8px rgba(0,128,0,0.3);
+}
+
+/* Gender radio */
+.gender-group {
+    display: flex;
+    gap: 30px;
+    margin-top: 5px;
+}
+
+.gender-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+.gender-group input[type="radio"] {
+    width: 16px;
+    height: 16px;
+}
+
+/* Checkbox + terms aligned together */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 6px;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+/* Submit button */
+button {
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background: #008000;
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background: #005900;
+}
+
+/* Toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #cc0000;
+  border-radius: 28px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #008000;
+}
+
+input:checked + .slider:before {
+  transform: translateX(32px);
+}
+
+/* Dark/Light labels */
+.theme-label {
+    font-size: 0.9rem;
+}
+
+/* Error messages */
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+/* Terms link */
+.checkbox-label a {
+    color: #008000;
+    text-decoration: none;
+}
+
+.checkbox-label a:hover {
+    text-decoration: underline;
+}
